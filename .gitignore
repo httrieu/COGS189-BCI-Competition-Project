@@ -169,3 +169,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Dataset
+BCICIV_2a_gdf.zip
+BCICIV_2a_gdf
