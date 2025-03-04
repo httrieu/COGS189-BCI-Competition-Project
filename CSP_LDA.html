@@ -7514,7 +7514,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -7524,45 +7524,6 @@ a.anchor-link {
 <span class="kn">from</span> <span class="nn">scipy.signal</span> <span class="kn">import</span> <span class="n">butter</span><span class="p">,</span> <span class="n">sosfiltfilt</span><span class="p">,</span> <span class="n">sosfreqz</span>  <span class="c1"># for filtering</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>   
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">189</span><span class="p">)</span>
-<span class="n">rand_nums</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">butter_bandpass</span><span class="p">(</span><span class="n">lowcut</span><span class="p">,</span> <span class="n">highcut</span><span class="p">,</span> <span class="n">fs</span><span class="p">,</span> <span class="n">order</span> <span class="o">=</span> <span class="mi">2</span><span class="p">):</span>
-        <span class="n">nyq</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">fs</span>
-        <span class="n">low</span> <span class="o">=</span> <span class="n">lowcut</span> <span class="o">/</span> <span class="n">nyq</span>
-        <span class="n">high</span> <span class="o">=</span> <span class="n">highcut</span> <span class="o">/</span> <span class="n">nyq</span>
-        <span class="n">sos</span> <span class="o">=</span> <span class="n">butter</span><span class="p">(</span><span class="n">order</span><span class="p">,</span> <span class="p">[</span><span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">],</span> <span class="n">analog</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">btype</span> <span class="o">=</span> <span class="s1">'band'</span><span class="p">,</span> <span class="n">output</span> <span class="o">=</span> <span class="s1">'sos'</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">sos</span>
-
-<span class="k">def</span> <span class="nf">butter_bandpass_filter</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">lowcut</span><span class="p">,</span> <span class="n">highcut</span><span class="p">,</span> <span class="n">fs</span><span class="p">,</span> <span class="n">order</span> <span class="o">=</span> <span class="mi">2</span><span class="p">):</span>
-        <span class="n">sos</span> <span class="o">=</span> <span class="n">butter_bandpass</span><span class="p">(</span><span class="n">lowcut</span><span class="p">,</span> <span class="n">highcut</span><span class="p">,</span> <span class="n">fs</span><span class="p">,</span> <span class="n">order</span> <span class="o">=</span> <span class="n">order</span><span class="p">)</span>
-        <span class="n">y</span> <span class="o">=</span> <span class="n">sosfiltfilt</span><span class="p">(</span><span class="n">sos</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">y</span>
 </pre></div>
 </div>
 </div>
@@ -7584,7 +7545,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">passbands</span> <span class="o">=</span> <span class="p">[</span>
@@ -7697,7 +7658,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.1s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
 </pre>
 </div>
 </div>
@@ -7724,9 +7685,6 @@ Not setting metadata
 288 matching events found
 Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
 </pre>
 </div>
 </div>
@@ -7740,7 +7698,10 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>  Filtering 4-7 Hz...
+<pre>0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
+  Filtering 4-7 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 4 - 7 Hz
 
@@ -7796,7 +7757,6 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
 </pre>
 </div>
 </div>
@@ -7810,7 +7770,8 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>  Filtering 7-12 Hz...
+<pre>0 bad epochs dropped
+  Filtering 7-12 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 7 - 12 Hz
 
@@ -7831,7 +7792,6 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
 </pre>
 </div>
 </div>
@@ -7845,7 +7805,8 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>  Filtering 10-15 Hz...
+<pre>0 bad epochs dropped
+  Filtering 10-15 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 10 - 15 Hz
 
@@ -7866,7 +7827,6 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
 </pre>
 </div>
 </div>
@@ -7880,7 +7840,8 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>  Filtering 12-19 Hz...
+<pre>0 bad epochs dropped
+  Filtering 12-19 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 12 - 19 Hz
 
@@ -7896,9 +7857,6 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 275 samples (1.100 s)
 
 Not setting metadata
-288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
 </pre>
 </div>
 </div>
@@ -7912,7 +7870,10 @@ Applying baseline correction (mode: mean)
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 projection items activated
+<pre>288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
 0 bad epochs dropped
   Filtering 15-25 Hz...
@@ -7931,11 +7892,6 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 221 samples (0.884 s)
 
 Not setting metadata
-288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -7949,7 +7905,12 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
+<pre>288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
   Filtering 19-30 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 19 - 30 Hz
@@ -7966,11 +7927,6 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 175 samples (0.700 s)
 
 Not setting metadata
-288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -7984,7 +7940,12 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
+<pre>288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
   Filtering 25-35 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 25 - 35 Hz
@@ -8041,7 +8002,7 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.4s
 </pre>
 </div>
 </div>
@@ -8100,6 +8061,7 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
 </pre>
 </div>
 </div>
@@ -8113,8 +8075,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 2-5 Hz...
+<pre>  Filtering 2-5 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 2 - 5 Hz
 
@@ -8275,7 +8236,6 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
 </pre>
 </div>
 </div>
@@ -8289,7 +8249,8 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>  Filtering 12-19 Hz...
+<pre>0 bad epochs dropped
+  Filtering 12-19 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 12 - 19 Hz
 
@@ -8303,6 +8264,41 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Upper passband edge: 19.00 Hz
 - Upper transition bandwidth: 4.75 Hz (-6 dB cutoff frequency: 21.38 Hz)
 - Filter length: 275 samples (1.100 s)
+
+Not setting metadata
+288 matching events found
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
+  Filtering 15-25 Hz...
+Filtering raw data in 1 contiguous segment
+Setting up band-pass filter from 15 - 25 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal bandpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 15.00
+- Lower transition bandwidth: 3.75 Hz (-6 dB cutoff frequency: 13.12 Hz)
+- Upper passband edge: 25.00 Hz
+- Upper transition bandwidth: 6.25 Hz (-6 dB cutoff frequency: 28.12 Hz)
+- Filter length: 221 samples (0.884 s)
 
 Not setting metadata
 288 matching events found
@@ -8324,41 +8320,6 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>0 bad epochs dropped
-  Filtering 15-25 Hz...
-Filtering raw data in 1 contiguous segment
-Setting up band-pass filter from 15 - 25 Hz
-
-FIR filter parameters
----------------------
-Designing a one-pass, zero-phase, non-causal bandpass filter:
-- Windowed time-domain design (firwin) method
-- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
-- Lower passband edge: 15.00
-- Lower transition bandwidth: 3.75 Hz (-6 dB cutoff frequency: 13.12 Hz)
-- Upper passband edge: 25.00 Hz
-- Upper transition bandwidth: 6.25 Hz (-6 dB cutoff frequency: 28.12 Hz)
-- Filter length: 221 samples (0.884 s)
-
-Not setting metadata
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
   Filtering 19-30 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 19 - 30 Hz
@@ -8386,7 +8347,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
 </pre>
 </div>
 </div>
@@ -8415,7 +8376,7 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.4s
 </pre>
 </div>
 </div>
@@ -8504,26 +8465,26 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 825 samples (3.300 s)
 
 Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.1s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
-  Filtering 2-5 Hz...
+<pre>  Filtering 2-5 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 2 - 5 Hz
 
@@ -8544,7 +8505,6 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
 </pre>
 </div>
 </div>
@@ -8558,7 +8518,8 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>  Filtering 4-7 Hz...
+<pre>0 bad epochs dropped
+  Filtering 4-7 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 4 - 7 Hz
 
@@ -8574,6 +8535,11 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 413 samples (1.652 s)
 
 Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -8587,12 +8553,7 @@ Not setting metadata
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
+<pre>0 bad epochs dropped
   Filtering 6-10 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 6 - 10 Hz
@@ -8611,6 +8572,9 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 Not setting metadata
 288 matching events found
 Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -8624,10 +8588,7 @@ Setting baseline interval to [-0.3, 0.0] s
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
+<pre>0 bad epochs dropped
   Filtering 7-12 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 7 - 12 Hz
@@ -8649,21 +8610,21 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.1s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 10-15 Hz...
+<pre>  Filtering 10-15 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 10 - 15 Hz
 
@@ -8684,6 +8645,7 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
 </pre>
 </div>
 </div>
@@ -8697,8 +8659,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 12-19 Hz...
+<pre>  Filtering 12-19 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 12 - 19 Hz
 
@@ -8748,21 +8709,21 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Upper transition bandwidth: 6.25 Hz (-6 dB cutoff frequency: 28.12 Hz)
 - Filter length: 221 samples (0.884 s)
 
+Not setting metadata
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Not setting metadata
-288 matching events found
+<pre>288 matching events found
 Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
@@ -8918,21 +8879,21 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.1s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 2-5 Hz...
+<pre>  Filtering 2-5 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 2 - 5 Hz
 
@@ -8953,6 +8914,7 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
 </pre>
 </div>
 </div>
@@ -8966,8 +8928,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 4-7 Hz...
+<pre>  Filtering 4-7 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 4 - 7 Hz
 
@@ -9053,6 +9014,11 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 413 samples (1.652 s)
 
 Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -9066,12 +9032,7 @@ Not setting metadata
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
+<pre>0 bad epochs dropped
   Filtering 10-15 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 10 - 15 Hz
@@ -9129,7 +9090,7 @@ Not setting metadata
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
 </pre>
 </div>
 </div>
@@ -9164,7 +9125,7 @@ Not setting metadata
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
 </pre>
 </div>
 </div>
@@ -9327,21 +9288,21 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.1s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 2-5 Hz...
+<pre>  Filtering 2-5 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 2 - 5 Hz
 
@@ -9357,25 +9318,25 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 413 samples (1.652 s)
 
 Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
+<pre>0 bad epochs dropped
   Filtering 4-7 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 4 - 7 Hz
@@ -9462,25 +9423,25 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 413 samples (1.652 s)
 
 Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
+<pre>0 bad epochs dropped
   Filtering 10-15 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 10 - 15 Hz
@@ -9532,21 +9493,21 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 275 samples (1.100 s)
 
 Not setting metadata
+288 matching events found
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
+<pre>Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
@@ -9602,22 +9563,22 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 175 samples (0.700 s)
 
 Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
+<pre>Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
 0 bad epochs dropped
@@ -9677,7 +9638,7 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.5s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.4s
 </pre>
 </div>
 </div>
@@ -9743,7 +9704,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.1s
 </pre>
 </div>
 </div>
@@ -9806,6 +9767,7 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
 </pre>
 </div>
 </div>
@@ -9819,8 +9781,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 6-10 Hz...
+<pre>  Filtering 6-10 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 6 - 10 Hz
 
@@ -9907,10 +9868,6 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 
 Not setting metadata
 288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -9924,7 +9881,11 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
+<pre>Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
   Filtering 12-19 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 12 - 19 Hz
@@ -9947,7 +9908,7 @@ Not setting metadata
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
 </pre>
 </div>
 </div>
@@ -10086,7 +10047,7 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.4s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
 </pre>
 </div>
 </div>
@@ -10152,7 +10113,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.1s
 </pre>
 </div>
 </div>
@@ -10214,6 +10175,7 @@ Not setting metadata
 Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -10227,8 +10189,7 @@ Applying baseline correction (mode: mean)
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
+<pre>0 bad epochs dropped
   Filtering 6-10 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 6 - 10 Hz
@@ -10285,6 +10246,7 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
 </pre>
 </div>
 </div>
@@ -10298,8 +10260,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 10-15 Hz...
+<pre>  Filtering 10-15 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 10 - 15 Hz
 
@@ -10318,8 +10279,6 @@ Not setting metadata
 288 matching events found
 Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -10333,7 +10292,9 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
+<pre>0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
   Filtering 12-19 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 12 - 19 Hz
@@ -10384,6 +10345,7 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Upper transition bandwidth: 6.25 Hz (-6 dB cutoff frequency: 28.12 Hz)
 - Filter length: 221 samples (0.884 s)
 
+Not setting metadata
 </pre>
 </div>
 </div>
@@ -10397,8 +10359,7 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Not setting metadata
-288 matching events found
+<pre>288 matching events found
 Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
@@ -10420,21 +10381,21 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 175 samples (0.700 s)
 
 Not setting metadata
+288 matching events found
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
+<pre>Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
@@ -10460,7 +10421,7 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.5s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.4s
 </pre>
 </div>
 </div>
@@ -10560,7 +10521,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.1s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
 </pre>
 </div>
 </div>
@@ -10624,7 +10585,6 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
 </pre>
 </div>
 </div>
@@ -10638,7 +10598,8 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>  Filtering 6-10 Hz...
+<pre>0 bad epochs dropped
+  Filtering 6-10 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 6 - 10 Hz
 
@@ -10689,6 +10650,11 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 413 samples (1.652 s)
 
 Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -10702,12 +10668,7 @@ Not setting metadata
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
+<pre>0 bad epochs dropped
   Filtering 10-15 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 10 - 15 Hz
@@ -10729,6 +10690,7 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
 </pre>
 </div>
 </div>
@@ -10742,8 +10704,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 12-19 Hz...
+<pre>  Filtering 12-19 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 12 - 19 Hz
 
@@ -10765,7 +10726,7 @@ Not setting metadata
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
 </pre>
 </div>
 </div>
@@ -10795,24 +10756,24 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 
 Not setting metadata
 288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
+<pre>0 bad epochs dropped
   Filtering 19-30 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 19 - 30 Hz
@@ -10869,7 +10830,7 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.4s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.5s
 </pre>
 </div>
 </div>
@@ -10928,7 +10889,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">filtered_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">filtered_data</span><span class="p">)</span>
@@ -10943,7 +10904,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>(8, 11, 288, 22, 1076)</pre>
 </div>
@@ -10955,7 +10916,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">labels_2d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">labels_2d</span><span class="p">)</span>
@@ -10970,7 +10931,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>(8, 11, 288)</pre>
 </div>
@@ -10993,7 +10954,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">data_left</span> <span class="o">=</span> <span class="p">[]</span>
@@ -11045,7 +11006,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>((8, 11, 72, 22, 1076),
  (8, 11, 72, 22, 1076),
@@ -11055,12 +11016,100 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">data_OVR_left</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">data_OVR_right</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">data_OVR_feet</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">data_OVR_tongue</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">random_samples</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="mi">72</span><span class="p">)</span>
+<span class="n">random_sample_range1</span> <span class="o">=</span> <span class="n">random_samples</span><span class="p">[:</span><span class="mi">24</span><span class="p">]</span>
+<span class="n">random_sample_range2</span> <span class="o">=</span> <span class="n">random_samples</span><span class="p">[</span><span class="mi">24</span><span class="p">:</span><span class="mi">48</span><span class="p">]</span>
+<span class="n">random_sample_range3</span> <span class="o">=</span> <span class="n">random_samples</span><span class="p">[</span><span class="mi">48</span><span class="p">:</span><span class="mi">72</span><span class="p">]</span>
+
+<span class="c1"># data_OVR_left</span>
+<span class="k">for</span> <span class="n">subject</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
+    <span class="n">subject_data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">band</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">):</span>
+        <span class="n">band_data</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">random_sample_range1</span><span class="p">:</span>
+            <span class="n">band_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_right</span><span class="p">[</span><span class="n">subject</span><span class="p">][</span><span class="n">band</span><span class="p">][</span><span class="n">sample</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">random_sample_range2</span><span class="p">:</span>
+            <span class="n">band_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_feet</span><span class="p">[</span><span class="n">subject</span><span class="p">][</span><span class="n">band</span><span class="p">][</span><span class="n">sample</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">random_sample_range3</span><span class="p">:</span>
+            <span class="n">band_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_tongue</span><span class="p">[</span><span class="n">subject</span><span class="p">][</span><span class="n">band</span><span class="p">][</span><span class="n">sample</span><span class="p">])</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">band_data</span><span class="p">)</span>
+        <span class="n">subject_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">band_data</span><span class="p">)</span>
+    <span class="n">data_OVR_left</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">subject_data</span><span class="p">)</span>
+
+<span class="c1"># data_OVR_right</span>
+<span class="k">for</span> <span class="n">subject</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
+    <span class="n">subject_data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">band</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">):</span>
+        <span class="n">band_data</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">random_sample_range1</span><span class="p">:</span>
+            <span class="n">band_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_left</span><span class="p">[</span><span class="n">subject</span><span class="p">][</span><span class="n">band</span><span class="p">][</span><span class="n">sample</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">random_sample_range2</span><span class="p">:</span>
+            <span class="n">band_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_feet</span><span class="p">[</span><span class="n">subject</span><span class="p">][</span><span class="n">band</span><span class="p">][</span><span class="n">sample</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">random_sample_range3</span><span class="p">:</span>
+            <span class="n">band_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_tongue</span><span class="p">[</span><span class="n">subject</span><span class="p">][</span><span class="n">band</span><span class="p">][</span><span class="n">sample</span><span class="p">])</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">band_data</span><span class="p">)</span>
+        <span class="n">subject_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">band_data</span><span class="p">)</span>
+    <span class="n">data_OVR_right</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">subject_data</span><span class="p">)</span>
+
+<span class="c1"># data_OVR_feet</span>
+<span class="k">for</span> <span class="n">subject</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
+    <span class="n">subject_data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">band</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">):</span>
+        <span class="n">band_data</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">random_sample_range1</span><span class="p">:</span>
+            <span class="n">band_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_left</span><span class="p">[</span><span class="n">subject</span><span class="p">][</span><span class="n">band</span><span class="p">][</span><span class="n">sample</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">random_sample_range2</span><span class="p">:</span>
+            <span class="n">band_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_right</span><span class="p">[</span><span class="n">subject</span><span class="p">][</span><span class="n">band</span><span class="p">][</span><span class="n">sample</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">random_sample_range3</span><span class="p">:</span>
+            <span class="n">band_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_tongue</span><span class="p">[</span><span class="n">subject</span><span class="p">][</span><span class="n">band</span><span class="p">][</span><span class="n">sample</span><span class="p">])</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">band_data</span><span class="p">)</span>
+        <span class="n">subject_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">band_data</span><span class="p">)</span>
+    <span class="n">data_OVR_feet</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">subject_data</span><span class="p">)</span>
+
+<span class="c1"># data_OVR_tongue</span>
+<span class="k">for</span> <span class="n">subject</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
+    <span class="n">subject_data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">band</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">):</span>
+        <span class="n">band_data</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">random_sample_range1</span><span class="p">:</span>
+            <span class="n">band_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_left</span><span class="p">[</span><span class="n">subject</span><span class="p">][</span><span class="n">band</span><span class="p">][</span><span class="n">sample</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">random_sample_range2</span><span class="p">:</span>
+            <span class="n">band_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_right</span><span class="p">[</span><span class="n">subject</span><span class="p">][</span><span class="n">band</span><span class="p">][</span><span class="n">sample</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">random_sample_range3</span><span class="p">:</span>
+            <span class="n">band_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_feet</span><span class="p">[</span><span class="n">subject</span><span class="p">][</span><span class="n">band</span><span class="p">][</span><span class="n">sample</span><span class="p">])</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">band_data</span><span class="p">)</span>
+        <span class="n">subject_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">band_data</span><span class="p">)</span>
+    <span class="n">data_OVR_tongue</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">subject_data</span><span class="p">)</span>
+
+<span class="c1"># Convert to numpy arrays</span>
+<span class="n">data_OVR_left</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data_OVR_left</span><span class="p">)</span>
+<span class="n">data_OVR_right</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data_OVR_right</span><span class="p">)</span>
+<span class="n">data_OVR_feet</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data_OVR_feet</span><span class="p">)</span>
+<span class="n">data_OVR_tongue</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data_OVR_tongue</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># # Reordering dimensions</span>
@@ -11080,7 +11129,42 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>((8, 11, 22, 1076, 72),
+ (8, 11, 22, 1076, 72),
+ (8, 11, 22, 1076, 72),
+ (8, 11, 22, 1076, 72))</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># # Reordering dimensions</span>
+<span class="n">data_OVR_left</span> <span class="o">=</span> <span class="n">data_OVR_left</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">data_OVR_right</span> <span class="o">=</span> <span class="n">data_OVR_right</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">data_OVR_feet</span> <span class="o">=</span> <span class="n">data_OVR_feet</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">data_OVR_tongue</span> <span class="o">=</span> <span class="n">data_OVR_tongue</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="n">data_OVR_left</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">data_OVR_right</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">data_OVR_feet</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">data_OVR_tongue</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>((8, 11, 22, 1076, 72),
  (8, 11, 22, 1076, 72),
@@ -11106,7 +11190,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">n_sample</span> <span class="o">=</span> <span class="mi">72</span>
@@ -11120,7 +11204,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#n_channel, n_time, n_sample = EEGR_train[0][0].shape</span>
@@ -11136,13 +11220,13 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>array([56, 70, 31, 50, 66, 34, 63,  4, 54,  9, 43, 53, 52, 16, 14, 21, 10,
-       64, 41, 47, 28,  5, 20, 42, 13, 33,  7, 59, 18, 71, 49, 22, 68, 26,
-       61, 32,  6, 46,  3, 48, 44,  8, 11, 15, 17,  1, 24,  0, 30, 65, 12,
-        2, 27, 37, 55, 23, 69, 67, 39, 57, 36, 29, 45, 60, 38, 40, 51, 62,
-       19, 25, 58, 35])</pre>
+<pre>array([26, 30,  1, 61, 55, 31, 63, 15, 54, 58, 70, 68,  3,  8, 60, 51, 42,
+       24, 38, 45, 11, 19, 23, 40, 65, 57, 20, 71, 37, 49, 13, 32, 36, 67,
+        7, 44, 64, 56, 41, 29,  9, 52, 69, 62, 59, 16, 43, 48, 35, 50, 25,
+        4,  0, 47, 21, 34, 46, 10,  5, 12, 53, 17, 66,  6, 39,  2, 28, 18,
+       33, 27, 22, 14])</pre>
 </div>
 </div>
 </div>
@@ -11152,7 +11236,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">6</span>
@@ -11180,12 +11264,12 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Our k is: 6
 Our bin size is: 12
-[[56 70 31 50 66 34 63  4 54  9 43 53]
- [52 16 14 21 10 64 41 47 28  5 20 42]
- [13 33  7 59 18 71 49 22 68 26 61 32]
- [ 6 46  3 48 44  8 11 15 17  1 24  0]
- [30 65 12  2 27 37 55 23 69 67 39 57]
- [36 29 45 60 38 40 51 62 19 25 58 35]]
+[[26 30  1 61 55 31 63 15 54 58 70 68]
+ [ 3  8 60 51 42 24 38 45 11 19 23 40]
+ [65 57 20 71 37 49 13 32 36 67  7 44]
+ [64 56 41 29  9 52 69 62 59 16 43 48]
+ [35 50 25  4  0 47 21 34 46 10  5 12]
+ [53 17 66  6 39  2 28 18 33 27 22 14]]
 </pre>
 </div>
 </div>
@@ -11196,7 +11280,7 @@ Our bin size is: 12
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">trainIdx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">k</span><span class="p">,</span> <span class="n">bin_size</span><span class="o">*</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
@@ -11211,7 +11295,7 @@ Our bin size is: 12
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># We'll reset trainIdx and valIdx (just in case)</span>
@@ -11246,63 +11330,14 @@ Our bin size is: 12
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>array([[56, 70, 31, 50, 66, 34, 63,  4, 54,  9, 43, 53],
-       [39, 59,  5,  7, 32, 36, 68,  9, 12, 60, 58, 10],
-       [27, 35, 25, 63, 22, 49,  3, 20, 34, 33,  5, 28],
-       [ 9, 36,  4, 18, 31, 54, 49, 30, 58, 42, 22, 34],
-       [53, 34, 63, 10, 39, 61,  4, 51, 36, 69, 48, 23],
-       [41,  6, 10, 23, 19, 29, 30, 59, 49, 39, 71, 51]])</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">trainIdx</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>array([[52, 16, 14, 21, 10, 64, 41, 47, 28,  5, 20, 42, 13, 33,  7, 59,
-        18, 71, 49, 22, 68, 26, 61, 32,  6, 46,  3, 48, 44,  8, 11, 15,
-        17,  1, 24,  0, 30, 65, 12,  2, 27, 37, 55, 23, 69, 67, 39, 57,
-        36, 29, 45, 60, 38, 40, 51, 62, 19, 25, 58, 35],
-       [62, 28,  3, 52, 23, 30, 51, 24, 27, 42, 21, 46, 14,  6, 64, 56,
-        53, 34, 13, 67, 63, 54, 25, 43, 33,  2,  0, 57, 70, 38, 45, 19,
-        22, 37, 15, 49, 20, 16,  1,  4, 61, 66, 55,  8, 17, 29, 44, 40,
-        31, 26, 69, 65, 18, 48, 41, 47, 50, 71, 11, 35],
-       [21, 42, 17, 66, 13, 53, 59, 43, 11, 31, 55, 19, 36, 16, 12, 18,
-        14,  2, 65, 46, 44, 69, 50, 40,  6, 15,  1, 23, 37, 30,  4, 41,
-        70, 29, 57, 56, 62, 52, 48, 38, 58,  8, 68,  7, 60, 51, 61,  9,
-        45, 26, 64, 47, 32, 54, 24,  0, 67, 71, 10, 39],
-       [51,  3,  6, 59, 13, 23, 32, 63, 45, 20, 60, 46, 43, 67, 70, 14,
-        35, 17, 25,  7, 50, 19, 68, 21, 28, 57, 61, 56, 55, 62,  2, 53,
-        29, 12, 69, 41,  8, 66, 52,  1, 33,  0, 37, 71, 11, 44, 26, 65,
-        15, 24, 39, 10, 64, 27, 47,  5, 16, 38, 48, 40],
-       [56, 38, 67, 31, 22, 62, 49,  5, 35, 52, 28, 27,  8, 47, 43, 14,
-        29, 55,  3, 32, 70, 57,  7, 40, 25, 13, 50, 17, 66,  6, 37, 33,
-        12, 21, 42, 54, 18, 60, 71, 64, 46, 30, 45, 44, 26, 41, 11,  2,
-        16, 58, 68,  0,  9, 19, 20, 65, 59, 24,  1, 15],
-       [ 4, 68, 21, 65, 46, 14, 31,  2, 69, 11, 53, 40, 18, 55, 17, 33,
-        66, 60, 44,  9, 20,  8, 52, 57, 48, 37, 61, 28,  3, 54, 34, 50,
-        36, 26, 16, 47, 62, 25,  0, 56, 64, 45, 35,  5, 43, 15, 22, 27,
-        67, 63, 58, 24, 32,  7, 13, 70, 12, 38, 42,  1]])</pre>
+<pre>array([[26, 30,  1, 61, 55, 31, 63, 15, 54, 58, 70, 68],
+       [43,  2, 27, 49, 50, 33, 32, 41, 55, 38, 10, 71],
+       [59, 38, 31, 35, 42, 54,  8, 34,  7, 12, 28, 70],
+       [ 0, 65, 68, 12, 71,  2, 43, 36, 19, 10, 17, 33],
+       [ 8, 57, 21, 49, 43, 31, 56, 16, 27, 44,  6,  4],
+       [ 5, 43, 10, 62, 58, 30, 39, 61, 69, 42,  7, 22]])</pre>
 </div>
 </div>
 </div>
@@ -11312,7 +11347,7 @@ Our bin size is: 12
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Depending on your solution, valIdx and trainIdx may not be np.arrays</span>
@@ -11332,7 +11367,7 @@ Our bin size is: 12
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">trainIdx</span><span class="o">.</span><span class="n">shape</span>
@@ -11346,7 +11381,7 @@ Our bin size is: 12
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>(6, 60)</pre>
 </div>
@@ -11358,7 +11393,7 @@ Our bin size is: 12
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">valIdx</span><span class="o">.</span><span class="n">shape</span>
@@ -11372,7 +11407,7 @@ Our bin size is: 12
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>(6, 12)</pre>
 </div>
@@ -11384,7 +11419,7 @@ Our bin size is: 12
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">data_left</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span>
@@ -11398,7 +11433,7 @@ Our bin size is: 12
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>(22, 1076, 72)</pre>
 </div>
@@ -11421,7 +11456,7 @@ Our bin size is: 12
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Main Analysis (Do Not Modify)</span>
@@ -11549,8 +11584,8 @@ Processing Fold 4/6
 Processing Fold 5/6
 Processing Fold 6/6
 ===============
-[0.88888889 0.60416667 0.95138889 0.84027778 0.79166667 0.95833333
- 0.97222222 0.79166667]
+[0.88888889 0.5625     0.94444444 0.84027778 0.80555556 0.95138889
+ 0.95833333 0.83333333]
 </pre>
 </div>
 </div>
@@ -11584,60 +11619,7 @@ Processing Fold 6/6
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">data_OVR_left</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># One vs the rest for use with the left hand</span>
-<span class="n">randSubjects</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
-<span class="n">subject1</span> <span class="o">=</span> <span class="n">randSubjects</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">subject2</span> <span class="o">=</span> <span class="n">randSubjects</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">subject3</span> <span class="o">=</span> <span class="n">randSubjects</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-
-<span class="n">data_OVR_left</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_right</span><span class="p">[</span><span class="n">subject1</span><span class="p">])</span>
-<span class="n">data_OVR_left</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_right</span><span class="p">[</span><span class="n">subject2</span><span class="p">])</span>
-<span class="n">data_OVR_left</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_right</span><span class="p">[</span><span class="n">subject3</span><span class="p">])</span>
-
-<span class="n">randSubjects</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
-<span class="n">subject1</span> <span class="o">=</span> <span class="n">randSubjects</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">subject2</span> <span class="o">=</span> <span class="n">randSubjects</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">subject3</span> <span class="o">=</span> <span class="n">randSubjects</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-
-<span class="n">data_OVR_left</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_feet</span><span class="p">[</span><span class="n">subject1</span><span class="p">])</span>
-<span class="n">data_OVR_left</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_feet</span><span class="p">[</span><span class="n">subject2</span><span class="p">])</span>
-<span class="n">data_OVR_left</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_feet</span><span class="p">[</span><span class="n">subject3</span><span class="p">])</span>
-
-<span class="n">randSubjects</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
-<span class="n">subject1</span> <span class="o">=</span> <span class="n">randSubjects</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">subject2</span> <span class="o">=</span> <span class="n">randSubjects</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-
-<span class="n">data_OVR_left</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_tongue</span><span class="p">[</span><span class="n">subject1</span><span class="p">])</span>
-<span class="n">data_OVR_left</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_tongue</span><span class="p">[</span><span class="n">subject2</span><span class="p">])</span>
-
-<span class="n">data_OVR_left</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data_OVR_left</span><span class="p">)</span>
-<span class="n">data_OVR_left</span><span class="o">.</span><span class="n">shape</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>(8, 11, 22, 1076, 72)</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># We'll reset trainIdx and valIdx (just in case)</span>
@@ -11689,11 +11671,11 @@ Processing Fold 6/6
         <span class="k">for</span> <span class="n">band</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_filters</span><span class="p">):</span>
             <span class="c1"># train,val dataset -&gt; train,val for each subject&amp;band</span>
             <span class="n">L_train</span> <span class="o">=</span> <span class="n">data_left</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">trainIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
-            <span class="n">R_train</span> <span class="o">=</span> <span class="n">data_OVR_left</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">trainIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
+            <span class="n">OVR_train</span> <span class="o">=</span> <span class="n">data_OVR_left</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">trainIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
             <span class="n">L_val</span> <span class="o">=</span> <span class="n">data_left</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">valIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
-            <span class="n">R_val</span> <span class="o">=</span> <span class="n">data_OVR_left</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">valIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
-            <span class="n">train_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">((</span><span class="n">L_train</span><span class="p">,</span><span class="n">R_train</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># &lt;- CSP input data format (classes, trials, chans, samples) </span>
-            <span class="n">val_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">((</span><span class="n">L_val</span><span class="p">,</span><span class="n">R_val</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># &lt;- CSP input data format (classes, trials, chans, samples)</span>
+            <span class="n">OVR_val</span> <span class="o">=</span> <span class="n">data_OVR_left</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">valIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
+            <span class="n">train_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">((</span><span class="n">L_train</span><span class="p">,</span><span class="n">OVR_train</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># &lt;- CSP input data format (classes, trials, chans, samples) </span>
+            <span class="n">val_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">((</span><span class="n">L_val</span><span class="p">,</span><span class="n">OVR_val</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># &lt;- CSP input data format (classes, trials, chans, samples)</span>
 
             <span class="c1"># Run Mahta's CSP code</span>
             <span class="c1"># Source: https://github.com/mahtamsv/CCACSP</span>
@@ -11791,9 +11773,21 @@ Processing Fold 4/6
 Processing Fold 5/6
 Processing Fold 6/6
 ===============
-[1. 1. 1. 1. 1. 1. 1. 1.]
+[0.93055556 0.70833333 0.89583333 0.84027778 0.80555556 0.97222222
+ 0.97916667 0.92361111]
 </pre>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Right-vs-Rest">Right vs Rest<a class="anchor-link" href="#Right-vs-Rest">¶</a></h2>
 </div>
 </div>
 </div>
@@ -11802,12 +11796,83 @@ Processing Fold 6/6
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># We'll reset trainIdx and valIdx (just in case)</span>
+<span class="c1"># Note: feel free to use uninitialized lists and append</span>
+<span class="c1">#       this is just one possible starting point to show</span>
+<span class="c1">#       the correct size of these objects.</span>
+<span class="n">trainIdx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">k</span><span class="p">,</span> <span class="n">bin_size</span><span class="o">*</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span> <span class="c1"># could also be = []</span>
+<span class="n">valIdx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">k</span><span class="p">,</span> <span class="n">bin_size</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>           <span class="c1"># could also be = []</span>
 
-<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">'jupyter nbconvert --to html CSP_LDA.ipynb'</span><span class="p">)</span>
+<span class="c1"># --- Question 4 ---</span>
+<span class="c1"># YOUR CODE HERE</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+    <span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">row</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">valIdx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">randIdx</span><span class="p">[</span><span class="n">row</span><span class="p">]</span>
+            <span class="k">continue</span>
+        <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">randIdx</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">randIdx</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">col</span><span class="p">])</span>
+    <span class="n">trainIdx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">lst</span>
+    <span class="n">randIdx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="n">n_sample</span><span class="p">)</span>
+    <span class="n">randIdx</span> <span class="o">=</span> <span class="n">randIdx</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">bin_size</span><span class="p">)</span>
+<span class="n">valIdx</span>
+
+<span class="k">assert</span> <span class="n">valIdx</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">bin_size</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">trainIdx</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">bin_size</span><span class="o">*</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="c1"># Main Analysis (Do Not Modify)</span>
+
+<span class="c1"># Declare useful variables</span>
+<span class="n">n_subjects</span><span class="p">,</span> <span class="n">n_filters</span> <span class="o">=</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
+<span class="n">train_size</span> <span class="o">=</span> <span class="n">bin_size</span> <span class="o">*</span> <span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">val_size</span> <span class="o">=</span> <span class="n">bin_size</span>
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n_subjects</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>
+<span class="n">csp_per_class</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">trainIdx</span> <span class="o">=</span> <span class="n">trainIdx</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">valIdx</span> <span class="o">=</span> <span class="n">valIdx</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="c1"># Begin nested loops</span>
+<span class="c1"># Subject &gt; Fold &gt; Band</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'==============='</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">subject</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_subjects</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Processing Subject </span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">subject</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">n_subjects</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">fold</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Processing Fold </span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">fold</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>
+        <span class="n">band_score_train</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">train_size</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">n_filters</span><span class="p">))</span>
+        <span class="n">band_score_val</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">val_size</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">n_filters</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">band</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_filters</span><span class="p">):</span>
+            <span class="c1"># train,val dataset -&gt; train,val for each subject&amp;band</span>
+            <span class="n">r_train</span> <span class="o">=</span> <span class="n">data_right</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">trainIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
+            <span class="n">OVR_train</span> <span class="o">=</span> <span class="n">data_OVR_right</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">trainIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
+            <span class="n">r_val</span> <span class="o">=</span> <span class="n">data_right</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">valIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
+            <span class="n">OVR_val</span> <span class="o">=</span> <span class="n">data_OVR_right</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">valIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
+            <span class="n">train_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">((</span><span class="n">r_train</span><span class="p">,</span><span class="n">OVR_train</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># &lt;- CSP input data format (classes, trials, chans, samples) </span>
+            <span class="n">val_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">((</span><span class="n">r_val</span><span class="p">,</span><span class="n">OVR_val</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># &lt;- CSP input data format (classes, trials, chans, samples)</span>
+
+            <span class="c1"># Run Mahta's CSP code</span>
+            <span class="c1"># Source: https://github.com/mahtamsv/CCACSP</span>
+            <span class="n">csp_filts</span><span class="p">,</span> <span class="n">clf</span> <span class="o">=</span> <span class="n">train</span><span class="p">(</span><span class="n">train_data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">train_data</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">csp_per_class</span><span class="p">)</span>
+            <span class="n">train_prob</span> <span class="o">=</span> <span class="n">test</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">(</span><span class="n">train_data</span><span class="p">),</span> <span class="n">csp_filts</span><span class="p">,</span> <span class="n">clf</span><span class="p">)</span>
+            <span class="n">val_prob</span> <span class="o">=</span> <span class="n">test</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">(</span><span class="n">val_data</span><span class="p">),</span> <span class="n">csp_filts</span><span class="p">,</span> <span class="n">clf</span><span class="p">)</span>
+            
+            <span class="c1"># test() gives the prob of the 0th class, that's why </span>
+            <span class="c1"># we have y_val seemingly switched below</span>
+            <span class="n">y_val</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">12</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">12</span><span class="p">))</span>
+
+            <span class="n">band_score_train</span><span class="p">[:,</span><span class="n">band</span><span class="p">]</span> <span class="o">=</span> <span class="n">train_prob</span>
+            <span class="n">band_score_val</span><span class="p">[:,</span><span class="n">band</span><span class="p">]</span> <span class="o">=</span> <span class="n">val_prob</span>
+        
+        
+        <span class="n">accuracy</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span><span class="n">fold</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">rint</span><span class="p">(</span><span class="n">band_score_val</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span><span class="o">==</span><span class="n">y_val</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">y_val</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'==============='</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">accuracy</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="c1"># Main Analysis Over</span>
 </pre></div>
 </div>
 </div>
@@ -11817,10 +11882,447 @@ Processing Fold 6/6
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>0</pre>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>===============
+Processing Subject 1/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 2/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 3/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 4/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 5/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 6/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 7/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 8/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+[0.94444444 0.70138889 0.88888889 0.80555556 0.75694444 0.96527778
+ 0.95138889 0.77777778]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Feet-vs-Rest">Feet vs Rest<a class="anchor-link" href="#Feet-vs-Rest">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># We'll reset trainIdx and valIdx (just in case)</span>
+<span class="c1"># Note: feel free to use uninitialized lists and append</span>
+<span class="c1">#       this is just one possible starting point to show</span>
+<span class="c1">#       the correct size of these objects.</span>
+<span class="n">trainIdx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">k</span><span class="p">,</span> <span class="n">bin_size</span><span class="o">*</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span> <span class="c1"># could also be = []</span>
+<span class="n">valIdx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">k</span><span class="p">,</span> <span class="n">bin_size</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>           <span class="c1"># could also be = []</span>
+
+<span class="c1"># --- Question 4 ---</span>
+<span class="c1"># YOUR CODE HERE</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+    <span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">row</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">valIdx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">randIdx</span><span class="p">[</span><span class="n">row</span><span class="p">]</span>
+            <span class="k">continue</span>
+        <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">randIdx</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">randIdx</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">col</span><span class="p">])</span>
+    <span class="n">trainIdx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">lst</span>
+    <span class="n">randIdx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="n">n_sample</span><span class="p">)</span>
+    <span class="n">randIdx</span> <span class="o">=</span> <span class="n">randIdx</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">bin_size</span><span class="p">)</span>
+<span class="n">valIdx</span>
+
+<span class="k">assert</span> <span class="n">valIdx</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">bin_size</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">trainIdx</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">bin_size</span><span class="o">*</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="c1"># Main Analysis (Do Not Modify)</span>
+
+<span class="c1"># Declare useful variables</span>
+<span class="n">n_subjects</span><span class="p">,</span> <span class="n">n_filters</span> <span class="o">=</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
+<span class="n">train_size</span> <span class="o">=</span> <span class="n">bin_size</span> <span class="o">*</span> <span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">val_size</span> <span class="o">=</span> <span class="n">bin_size</span>
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n_subjects</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>
+<span class="n">csp_per_class</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">trainIdx</span> <span class="o">=</span> <span class="n">trainIdx</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">valIdx</span> <span class="o">=</span> <span class="n">valIdx</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="c1"># Begin nested loops</span>
+<span class="c1"># Subject &gt; Fold &gt; Band</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'==============='</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">subject</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_subjects</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Processing Subject </span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">subject</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">n_subjects</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">fold</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Processing Fold </span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">fold</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>
+        <span class="n">band_score_train</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">train_size</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">n_filters</span><span class="p">))</span>
+        <span class="n">band_score_val</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">val_size</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">n_filters</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">band</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_filters</span><span class="p">):</span>
+            <span class="c1"># train,val dataset -&gt; train,val for each subject&amp;band</span>
+            <span class="n">f_train</span> <span class="o">=</span> <span class="n">data_feet</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">trainIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
+            <span class="n">OVR_train</span> <span class="o">=</span> <span class="n">data_OVR_feet</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">trainIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
+            <span class="n">f_val</span> <span class="o">=</span> <span class="n">data_feet</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">valIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
+            <span class="n">OVR_val</span> <span class="o">=</span> <span class="n">data_OVR_feet</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">valIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
+            <span class="n">train_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">((</span><span class="n">f_train</span><span class="p">,</span><span class="n">OVR_train</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># &lt;- CSP input data format (classes, trials, chans, samples) </span>
+            <span class="n">val_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">((</span><span class="n">f_val</span><span class="p">,</span><span class="n">OVR_val</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># &lt;- CSP input data format (classes, trials, chans, samples)</span>
+
+            <span class="c1"># Run Mahta's CSP code</span>
+            <span class="c1"># Source: https://github.com/mahtamsv/CCACSP</span>
+            <span class="n">csp_filts</span><span class="p">,</span> <span class="n">clf</span> <span class="o">=</span> <span class="n">train</span><span class="p">(</span><span class="n">train_data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">train_data</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">csp_per_class</span><span class="p">)</span>
+            <span class="n">train_prob</span> <span class="o">=</span> <span class="n">test</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">(</span><span class="n">train_data</span><span class="p">),</span> <span class="n">csp_filts</span><span class="p">,</span> <span class="n">clf</span><span class="p">)</span>
+            <span class="n">val_prob</span> <span class="o">=</span> <span class="n">test</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">(</span><span class="n">val_data</span><span class="p">),</span> <span class="n">csp_filts</span><span class="p">,</span> <span class="n">clf</span><span class="p">)</span>
+            
+            <span class="c1"># test() gives the prob of the 0th class, that's why </span>
+            <span class="c1"># we have y_val seemingly switched below</span>
+            <span class="n">y_val</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">12</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">12</span><span class="p">))</span>
+
+            <span class="n">band_score_train</span><span class="p">[:,</span><span class="n">band</span><span class="p">]</span> <span class="o">=</span> <span class="n">train_prob</span>
+            <span class="n">band_score_val</span><span class="p">[:,</span><span class="n">band</span><span class="p">]</span> <span class="o">=</span> <span class="n">val_prob</span>
+        
+        
+        <span class="n">accuracy</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span><span class="n">fold</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">rint</span><span class="p">(</span><span class="n">band_score_val</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span><span class="o">==</span><span class="n">y_val</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">y_val</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'==============='</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">accuracy</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="c1"># Main Analysis Over</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>===============
+Processing Subject 1/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 2/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 3/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 4/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 5/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 6/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 7/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 8/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+[0.9375     0.98611111 0.85416667 0.63888889 0.75694444 0.98611111
+ 0.88194444 0.86805556]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Tongue-vs-Rest">Tongue vs Rest<a class="anchor-link" href="#Tongue-vs-Rest">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># We'll reset trainIdx and valIdx (just in case)</span>
+<span class="c1"># Note: feel free to use uninitialized lists and append</span>
+<span class="c1">#       this is just one possible starting point to show</span>
+<span class="c1">#       the correct size of these objects.</span>
+<span class="n">trainIdx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">k</span><span class="p">,</span> <span class="n">bin_size</span><span class="o">*</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span> <span class="c1"># could also be = []</span>
+<span class="n">valIdx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">k</span><span class="p">,</span> <span class="n">bin_size</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>           <span class="c1"># could also be = []</span>
+
+<span class="c1"># --- Question 4 ---</span>
+<span class="c1"># YOUR CODE HERE</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+    <span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">row</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">valIdx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">randIdx</span><span class="p">[</span><span class="n">row</span><span class="p">]</span>
+            <span class="k">continue</span>
+        <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">randIdx</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">randIdx</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">col</span><span class="p">])</span>
+    <span class="n">trainIdx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">lst</span>
+    <span class="n">randIdx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="n">n_sample</span><span class="p">)</span>
+    <span class="n">randIdx</span> <span class="o">=</span> <span class="n">randIdx</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">bin_size</span><span class="p">)</span>
+<span class="n">valIdx</span>
+
+<span class="k">assert</span> <span class="n">valIdx</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">bin_size</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">trainIdx</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">bin_size</span><span class="o">*</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="c1"># Main Analysis (Do Not Modify)</span>
+
+<span class="c1"># Declare useful variables</span>
+<span class="n">n_subjects</span><span class="p">,</span> <span class="n">n_filters</span> <span class="o">=</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
+<span class="n">train_size</span> <span class="o">=</span> <span class="n">bin_size</span> <span class="o">*</span> <span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">val_size</span> <span class="o">=</span> <span class="n">bin_size</span>
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n_subjects</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>
+<span class="n">csp_per_class</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">trainIdx</span> <span class="o">=</span> <span class="n">trainIdx</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">valIdx</span> <span class="o">=</span> <span class="n">valIdx</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="c1"># Begin nested loops</span>
+<span class="c1"># Subject &gt; Fold &gt; Band</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'==============='</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">subject</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_subjects</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Processing Subject </span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">subject</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">n_subjects</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">fold</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Processing Fold </span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">fold</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>
+        <span class="n">band_score_train</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">train_size</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">n_filters</span><span class="p">))</span>
+        <span class="n">band_score_val</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">val_size</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">n_filters</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">band</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_filters</span><span class="p">):</span>
+            <span class="c1"># train,val dataset -&gt; train,val for each subject&amp;band</span>
+            <span class="n">t_train</span> <span class="o">=</span> <span class="n">data_tongue</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">trainIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
+            <span class="n">OVR_train</span> <span class="o">=</span> <span class="n">data_OVR_tongue</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">trainIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
+            <span class="n">t_val</span> <span class="o">=</span> <span class="n">data_tongue</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">valIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
+            <span class="n">OVR_val</span> <span class="o">=</span> <span class="n">data_OVR_tongue</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span> <span class="n">band</span><span class="p">][:,:,</span><span class="n">valIdx</span><span class="p">[</span><span class="n">fold</span><span class="p">]]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># (trials, chans, samples)</span>
+            <span class="n">train_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">((</span><span class="n">t_train</span><span class="p">,</span><span class="n">OVR_train</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># &lt;- CSP input data format (classes, trials, chans, samples) </span>
+            <span class="n">val_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">((</span><span class="n">t_val</span><span class="p">,</span><span class="n">OVR_val</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># &lt;- CSP input data format (classes, trials, chans, samples)</span>
+
+            <span class="c1"># Run Mahta's CSP code</span>
+            <span class="c1"># Source: https://github.com/mahtamsv/CCACSP</span>
+            <span class="n">csp_filts</span><span class="p">,</span> <span class="n">clf</span> <span class="o">=</span> <span class="n">train</span><span class="p">(</span><span class="n">train_data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">train_data</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">csp_per_class</span><span class="p">)</span>
+            <span class="n">train_prob</span> <span class="o">=</span> <span class="n">test</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">(</span><span class="n">train_data</span><span class="p">),</span> <span class="n">csp_filts</span><span class="p">,</span> <span class="n">clf</span><span class="p">)</span>
+            <span class="n">val_prob</span> <span class="o">=</span> <span class="n">test</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">(</span><span class="n">val_data</span><span class="p">),</span> <span class="n">csp_filts</span><span class="p">,</span> <span class="n">clf</span><span class="p">)</span>
+            
+            <span class="c1"># test() gives the prob of the 0th class, that's why </span>
+            <span class="c1"># we have y_val seemingly switched below</span>
+            <span class="n">y_val</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">12</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">12</span><span class="p">))</span>
+
+            <span class="n">band_score_train</span><span class="p">[:,</span><span class="n">band</span><span class="p">]</span> <span class="o">=</span> <span class="n">train_prob</span>
+            <span class="n">band_score_val</span><span class="p">[:,</span><span class="n">band</span><span class="p">]</span> <span class="o">=</span> <span class="n">val_prob</span>
+        
+        
+        <span class="n">accuracy</span><span class="p">[</span><span class="n">subject</span><span class="p">,</span><span class="n">fold</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">rint</span><span class="p">(</span><span class="n">band_score_val</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span><span class="o">==</span><span class="n">y_val</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">y_val</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'==============='</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">accuracy</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="c1"># Main Analysis Over</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>===============
+Processing Subject 1/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 2/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 3/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 4/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 5/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 6/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 7/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+Processing Subject 8/8
+Processing Fold 1/6
+Processing Fold 2/6
+Processing Fold 3/6
+Processing Fold 4/6
+Processing Fold 5/6
+Processing Fold 6/6
+===============
+[0.95833333 0.77777778 0.90277778 0.75694444 0.61805556 0.96527778
+ 0.97916667 0.9375    ]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">'jupyter nbconvert --to html CSP_LDA.ipynb'</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
 </div>
