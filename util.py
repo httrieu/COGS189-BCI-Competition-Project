@@ -5,6 +5,8 @@ import numpy as np
 import scipy as sp 
 import scipy.linalg as la
 import sklearn.discriminant_analysis as lda
+from sklearn.svm import SVC
+from sklearn.naive_bayes import GaussianNB
 
 def A3Load():
     # Set A3 directory

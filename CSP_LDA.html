@@ -7656,7 +7656,7 @@ Setting baseline interval to [-0.3, 0.0] s
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.1s
 </pre>
 </div>
 </div>
@@ -7793,6 +7793,7 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
 </pre>
 </div>
 </div>
@@ -7806,8 +7807,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 10-15 Hz...
+<pre>  Filtering 10-15 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 10 - 15 Hz
 
@@ -7821,6 +7821,41 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Upper passband edge: 15.00 Hz
 - Upper transition bandwidth: 3.75 Hz (-6 dB cutoff frequency: 16.88 Hz)
 - Filter length: 331 samples (1.324 s)
+
+Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>  Filtering 12-19 Hz...
+Filtering raw data in 1 contiguous segment
+Setting up band-pass filter from 12 - 19 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal bandpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 12.00
+- Lower transition bandwidth: 3.00 Hz (-6 dB cutoff frequency: 10.50 Hz)
+- Upper passband edge: 19.00 Hz
+- Upper transition bandwidth: 4.75 Hz (-6 dB cutoff frequency: 21.38 Hz)
+- Filter length: 275 samples (1.100 s)
 
 Not setting metadata
 288 matching events found
@@ -7842,41 +7877,6 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>0 bad epochs dropped
-  Filtering 12-19 Hz...
-Filtering raw data in 1 contiguous segment
-Setting up band-pass filter from 12 - 19 Hz
-
-FIR filter parameters
----------------------
-Designing a one-pass, zero-phase, non-causal bandpass filter:
-- Windowed time-domain design (firwin) method
-- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
-- Lower passband edge: 12.00
-- Lower transition bandwidth: 3.00 Hz (-6 dB cutoff frequency: 10.50 Hz)
-- Upper passband edge: 19.00 Hz
-- Upper transition bandwidth: 4.75 Hz (-6 dB cutoff frequency: 21.38 Hz)
-- Filter length: 275 samples (1.100 s)
-
-Not setting metadata
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
   Filtering 15-25 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 15 - 25 Hz
@@ -7899,7 +7899,7 @@ Not setting metadata
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
 </pre>
 </div>
 </div>
@@ -8003,7 +8003,7 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.4s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
 </pre>
 </div>
 </div>
@@ -8062,21 +8062,21 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.1s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 2-5 Hz...
+<pre>  Filtering 2-5 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 2 - 5 Hz
 
@@ -8162,25 +8162,25 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 413 samples (1.652 s)
 
 Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
+<pre>0 bad epochs dropped
   Filtering 7-12 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 7 - 12 Hz
@@ -8267,6 +8267,7 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 275 samples (1.100 s)
 
 Not setting metadata
+288 matching events found
 </pre>
 </div>
 </div>
@@ -8280,8 +8281,7 @@ Not setting metadata
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
+<pre>Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
@@ -8302,6 +8302,10 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 221 samples (0.884 s)
 
 Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
 </pre>
 </div>
 </div>
@@ -8315,11 +8319,7 @@ Not setting metadata
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
+<pre>Using data from preloaded Raw for 288 events and 1076 original time points ...
 0 bad epochs dropped
   Filtering 19-30 Hz...
 Filtering raw data in 1 contiguous segment
@@ -8337,25 +8337,25 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 175 samples (0.700 s)
 
 Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
+<pre>0 bad epochs dropped
   Filtering 25-35 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 25 - 35 Hz
@@ -8377,7 +8377,7 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.5s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
 </pre>
 </div>
 </div>
@@ -8412,7 +8412,7 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.4s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
 </pre>
 </div>
 </div>
@@ -8471,21 +8471,21 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.1s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 2-5 Hz...
+<pre>  Filtering 2-5 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 2 - 5 Hz
 
@@ -8506,7 +8506,6 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
 </pre>
 </div>
 </div>
@@ -8520,7 +8519,8 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>  Filtering 4-7 Hz...
+<pre>0 bad epochs dropped
+  Filtering 4-7 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 4 - 7 Hz
 
@@ -8611,6 +8611,7 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
 </pre>
 </div>
 </div>
@@ -8624,8 +8625,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 10-15 Hz...
+<pre>  Filtering 10-15 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 10 - 15 Hz
 
@@ -8677,6 +8677,10 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 
 Not setting metadata
 288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -8690,11 +8694,7 @@ Not setting metadata
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
+<pre>0 bad epochs dropped
   Filtering 15-25 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 15 - 25 Hz
@@ -8748,9 +8748,6 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 Not setting metadata
 288 matching events found
 Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -8764,7 +8761,10 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
+<pre>Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
   Filtering 25-35 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 25 - 35 Hz
@@ -8880,21 +8880,21 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.1s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 2-5 Hz...
+<pre>  Filtering 2-5 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 2 - 5 Hz
 
@@ -8910,6 +8910,11 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 413 samples (1.652 s)
 
 Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -8923,12 +8928,7 @@ Not setting metadata
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
+<pre>0 bad epochs dropped
   Filtering 4-7 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 4 - 7 Hz
@@ -8944,8 +8944,6 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Upper transition bandwidth: 2.00 Hz (-6 dB cutoff frequency: 8.00 Hz)
 - Filter length: 413 samples (1.652 s)
 
-Not setting metadata
-288 matching events found
 </pre>
 </div>
 </div>
@@ -8959,7 +8957,9 @@ Not setting metadata
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Setting baseline interval to [-0.3, 0.0] s
+<pre>Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
@@ -8981,6 +8981,10 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 
 Not setting metadata
 288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -8994,11 +8998,7 @@ Not setting metadata
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
+<pre>0 bad epochs dropped
   Filtering 7-12 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 7 - 12 Hz
@@ -9018,6 +9018,8 @@ Not setting metadata
 288 matching events found
 Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -9031,9 +9033,7 @@ Applying baseline correction (mode: mean)
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
+<pre>0 bad epochs dropped
   Filtering 10-15 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 10 - 15 Hz
@@ -9126,7 +9126,7 @@ Not setting metadata
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
 </pre>
 </div>
 </div>
@@ -9289,21 +9289,21 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.1s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>  Filtering 2-5 Hz...
+<pre>0 bad epochs dropped
+  Filtering 2-5 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 2 - 5 Hz
 
@@ -9493,6 +9493,41 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Upper transition bandwidth: 4.75 Hz (-6 dB cutoff frequency: 21.38 Hz)
 - Filter length: 275 samples (1.100 s)
 
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
+  Filtering 15-25 Hz...
+Filtering raw data in 1 contiguous segment
+Setting up band-pass filter from 15 - 25 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal bandpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 15.00
+- Lower transition bandwidth: 3.75 Hz (-6 dB cutoff frequency: 13.12 Hz)
+- Upper passband edge: 25.00 Hz
+- Upper transition bandwidth: 6.25 Hz (-6 dB cutoff frequency: 28.12 Hz)
+- Filter length: 221 samples (0.884 s)
+
 Not setting metadata
 </pre>
 </div>
@@ -9500,7 +9535,381 @@ Not setting metadata
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
+  Filtering 19-30 Hz...
+Filtering raw data in 1 contiguous segment
+Setting up band-pass filter from 19 - 30 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal bandpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 19.00
+- Lower transition bandwidth: 4.75 Hz (-6 dB cutoff frequency: 16.62 Hz)
+- Upper passband edge: 30.00 Hz
+- Upper transition bandwidth: 7.50 Hz (-6 dB cutoff frequency: 33.75 Hz)
+- Filter length: 175 samples (0.700 s)
+
+Not setting metadata
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
+  Filtering 25-35 Hz...
+Filtering raw data in 1 contiguous segment
+Setting up band-pass filter from 25 - 35 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal bandpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 25.00
+- Lower transition bandwidth: 6.25 Hz (-6 dB cutoff frequency: 21.88 Hz)
+- Upper passband edge: 35.00 Hz
+- Upper transition bandwidth: 8.75 Hz (-6 dB cutoff frequency: 39.38 Hz)
+- Filter length: 133 samples (0.532 s)
+
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.5s
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
+  Filtering 30-40 Hz...
+Filtering raw data in 1 contiguous segment
+Setting up band-pass filter from 30 - 40 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal bandpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 30.00
+- Lower transition bandwidth: 7.50 Hz (-6 dB cutoff frequency: 26.25 Hz)
+- Upper passband edge: 40.00 Hz
+- Upper transition bandwidth: 10.00 Hz (-6 dB cutoff frequency: 45.00 Hz)
+- Filter length: 111 samples (0.444 s)
+
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.4s
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
+
+Processing A07T.gdf...
+Extracting EDF parameters from F:\COGS189-BCI-Competition-Project\BCICIV_2a_gdf\A07T.gdf...
+GDF file detected
+Setting channel info structure...
+Could not determine channel type of the following channels, they will be set as EEG:
+EEG-Fz, EEG, EEG, EEG, EEG, EEG, EEG, EEG-C3, EEG, EEG-Cz, EEG, EEG-C4, EEG, EEG, EEG, EEG, EEG, EEG, EEG, EEG-Pz, EEG, EEG, EOG-left, EOG-central, EOG-right
+Creating raw.info structure...
+Reading 0 ... 681070  =      0.000 ...  2724.280 secs...
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>f:\Anaconda\envs\CSE156\Lib\contextlib.py:144: RuntimeWarning: Channel names are not unique, found duplicates for: {'EEG'}. Applying running numbers for duplicates.
+  next(self.gen)
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Used Annotations descriptions: ['1023', '1072', '276', '277', '32766', '768', '769', '770', '771', '772']
+  Filtering 1-3 Hz...
+Filtering raw data in 1 contiguous segment
+Setting up band-pass filter from 1 - 3 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal bandpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Upper passband edge: 3.00 Hz
+- Upper transition bandwidth: 2.00 Hz (-6 dB cutoff frequency: 4.00 Hz)
+- Filter length: 825 samples (3.300 s)
+
+Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.1s
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>0 bad epochs dropped
+  Filtering 2-5 Hz...
+Filtering raw data in 1 contiguous segment
+Setting up band-pass filter from 2 - 5 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal bandpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 2.00
+- Lower transition bandwidth: 2.00 Hz (-6 dB cutoff frequency: 1.00 Hz)
+- Upper passband edge: 5.00 Hz
+- Upper transition bandwidth: 2.00 Hz (-6 dB cutoff frequency: 6.00 Hz)
+- Filter length: 413 samples (1.652 s)
+
+Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
 <pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>0 bad epochs dropped
+  Filtering 4-7 Hz...
+Filtering raw data in 1 contiguous segment
+Setting up band-pass filter from 4 - 7 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal bandpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 4.00
+- Lower transition bandwidth: 2.00 Hz (-6 dB cutoff frequency: 3.00 Hz)
+- Upper passband edge: 7.00 Hz
+- Upper transition bandwidth: 2.00 Hz (-6 dB cutoff frequency: 8.00 Hz)
+- Filter length: 413 samples (1.652 s)
+
+Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>0 bad epochs dropped
+  Filtering 6-10 Hz...
+Filtering raw data in 1 contiguous segment
+Setting up band-pass filter from 6 - 10 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal bandpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 6.00
+- Lower transition bandwidth: 2.00 Hz (-6 dB cutoff frequency: 5.00 Hz)
+- Upper passband edge: 10.00 Hz
+- Upper transition bandwidth: 2.50 Hz (-6 dB cutoff frequency: 11.25 Hz)
+- Filter length: 413 samples (1.652 s)
+
+Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>0 bad epochs dropped
+  Filtering 7-12 Hz...
+Filtering raw data in 1 contiguous segment
+Setting up band-pass filter from 7 - 12 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal bandpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 7.00
+- Lower transition bandwidth: 2.00 Hz (-6 dB cutoff frequency: 6.00 Hz)
+- Upper passband edge: 12.00 Hz
+- Upper transition bandwidth: 3.00 Hz (-6 dB cutoff frequency: 13.50 Hz)
+- Filter length: 413 samples (1.652 s)
+
+Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>0 bad epochs dropped
+  Filtering 10-15 Hz...
+Filtering raw data in 1 contiguous segment
+Setting up band-pass filter from 10 - 15 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal bandpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 10.00
+- Lower transition bandwidth: 2.50 Hz (-6 dB cutoff frequency: 8.75 Hz)
+- Upper passband edge: 15.00 Hz
+- Upper transition bandwidth: 3.75 Hz (-6 dB cutoff frequency: 16.88 Hz)
+- Filter length: 331 samples (1.324 s)
+
+Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>  Filtering 12-19 Hz...
+Filtering raw data in 1 contiguous segment
+Setting up band-pass filter from 12 - 19 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal bandpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 12.00
+- Lower transition bandwidth: 3.00 Hz (-6 dB cutoff frequency: 10.50 Hz)
+- Upper passband edge: 19.00 Hz
+- Upper transition bandwidth: 4.75 Hz (-6 dB cutoff frequency: 21.38 Hz)
+- Filter length: 275 samples (1.100 s)
+
+Not setting metadata
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
 </pre>
 </div>
 </div>
@@ -9530,21 +9939,21 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 
 Not setting metadata
 288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Applying baseline correction (mode: mean)
+<pre>Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
 0 bad epochs dropped
@@ -9564,11 +9973,6 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 175 samples (0.700 s)
 
 Not setting metadata
-288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -9582,7 +9986,12 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
+<pre>288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
   Filtering 25-35 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 25 - 35 Hz
@@ -9639,7 +10048,7 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.4s
 </pre>
 </div>
 </div>
@@ -9654,14 +10063,14 @@ Applying baseline correction (mode: mean)
 Using data from preloaded Raw for 288 events and 1076 original time points ...
 0 bad epochs dropped
 
-Processing A07T.gdf...
-Extracting EDF parameters from F:\COGS189-BCI-Competition-Project\BCICIV_2a_gdf\A07T.gdf...
+Processing A08T.gdf...
+Extracting EDF parameters from F:\COGS189-BCI-Competition-Project\BCICIV_2a_gdf\A08T.gdf...
 GDF file detected
 Setting channel info structure...
 Could not determine channel type of the following channels, they will be set as EEG:
 EEG-Fz, EEG, EEG, EEG, EEG, EEG, EEG, EEG-C3, EEG, EEG-Cz, EEG, EEG-C4, EEG, EEG, EEG, EEG, EEG, EEG, EEG, EEG-Pz, EEG, EEG, EOG-left, EOG-central, EOG-right
 Creating raw.info structure...
-Reading 0 ... 681070  =      0.000 ...  2724.280 secs...
+Reading 0 ... 675269  =      0.000 ...  2701.076 secs...
 </pre>
 </div>
 </div>
@@ -9903,11 +10312,6 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 275 samples (1.100 s)
 
 Not setting metadata
-288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -9921,7 +10325,12 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
+<pre>288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
   Filtering 15-25 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 15 - 25 Hz
@@ -9936,41 +10345,6 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Upper passband edge: 25.00 Hz
 - Upper transition bandwidth: 6.25 Hz (-6 dB cutoff frequency: 28.12 Hz)
 - Filter length: 221 samples (0.884 s)
-
-Not setting metadata
-288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 19-30 Hz...
-Filtering raw data in 1 contiguous segment
-Setting up band-pass filter from 19 - 30 Hz
-
-FIR filter parameters
----------------------
-Designing a one-pass, zero-phase, non-causal bandpass filter:
-- Windowed time-domain design (firwin) method
-- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
-- Lower passband edge: 19.00
-- Lower transition bandwidth: 4.75 Hz (-6 dB cutoff frequency: 16.62 Hz)
-- Upper passband edge: 30.00 Hz
-- Upper transition bandwidth: 7.50 Hz (-6 dB cutoff frequency: 33.75 Hz)
-- Filter length: 175 samples (0.700 s)
 
 Not setting metadata
 </pre>
@@ -9992,324 +10366,20 @@ Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
 0 bad epochs dropped
-  Filtering 25-35 Hz...
+  Filtering 19-30 Hz...
 Filtering raw data in 1 contiguous segment
-Setting up band-pass filter from 25 - 35 Hz
+Setting up band-pass filter from 19 - 30 Hz
 
 FIR filter parameters
 ---------------------
 Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Windowed time-domain design (firwin) method
 - Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
-- Lower passband edge: 25.00
-- Lower transition bandwidth: 6.25 Hz (-6 dB cutoff frequency: 21.88 Hz)
-- Upper passband edge: 35.00 Hz
-- Upper transition bandwidth: 8.75 Hz (-6 dB cutoff frequency: 39.38 Hz)
-- Filter length: 133 samples (0.532 s)
-
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.4s
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Not setting metadata
-288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
-  Filtering 30-40 Hz...
-Filtering raw data in 1 contiguous segment
-Setting up band-pass filter from 30 - 40 Hz
-
-FIR filter parameters
----------------------
-Designing a one-pass, zero-phase, non-causal bandpass filter:
-- Windowed time-domain design (firwin) method
-- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
-- Lower passband edge: 30.00
-- Lower transition bandwidth: 7.50 Hz (-6 dB cutoff frequency: 26.25 Hz)
-- Upper passband edge: 40.00 Hz
-- Upper transition bandwidth: 10.00 Hz (-6 dB cutoff frequency: 45.00 Hz)
-- Filter length: 111 samples (0.444 s)
-
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.4s
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Not setting metadata
-288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
-
-Processing A08T.gdf...
-Extracting EDF parameters from F:\COGS189-BCI-Competition-Project\BCICIV_2a_gdf\A08T.gdf...
-GDF file detected
-Setting channel info structure...
-Could not determine channel type of the following channels, they will be set as EEG:
-EEG-Fz, EEG, EEG, EEG, EEG, EEG, EEG, EEG-C3, EEG, EEG-Cz, EEG, EEG-C4, EEG, EEG, EEG, EEG, EEG, EEG, EEG, EEG-Pz, EEG, EEG, EOG-left, EOG-central, EOG-right
-Creating raw.info structure...
-Reading 0 ... 675269  =      0.000 ...  2701.076 secs...
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>f:\Anaconda\envs\CSE156\Lib\contextlib.py:144: RuntimeWarning: Channel names are not unique, found duplicates for: {'EEG'}. Applying running numbers for duplicates.
-  next(self.gen)
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Used Annotations descriptions: ['1023', '1072', '276', '277', '32766', '768', '769', '770', '771', '772']
-  Filtering 1-3 Hz...
-Filtering raw data in 1 contiguous segment
-Setting up band-pass filter from 1 - 3 Hz
-
-FIR filter parameters
----------------------
-Designing a one-pass, zero-phase, non-causal bandpass filter:
-- Windowed time-domain design (firwin) method
-- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
-- Lower passband edge: 1.00
-- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
-- Upper passband edge: 3.00 Hz
-- Upper transition bandwidth: 2.00 Hz (-6 dB cutoff frequency: 4.00 Hz)
-- Filter length: 825 samples (3.300 s)
-
-Not setting metadata
-288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>  Filtering 2-5 Hz...
-Filtering raw data in 1 contiguous segment
-Setting up band-pass filter from 2 - 5 Hz
-
-FIR filter parameters
----------------------
-Designing a one-pass, zero-phase, non-causal bandpass filter:
-- Windowed time-domain design (firwin) method
-- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
-- Lower passband edge: 2.00
-- Lower transition bandwidth: 2.00 Hz (-6 dB cutoff frequency: 1.00 Hz)
-- Upper passband edge: 5.00 Hz
-- Upper transition bandwidth: 2.00 Hz (-6 dB cutoff frequency: 6.00 Hz)
-- Filter length: 413 samples (1.652 s)
-
-Not setting metadata
-288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 4-7 Hz...
-Filtering raw data in 1 contiguous segment
-Setting up band-pass filter from 4 - 7 Hz
-
-FIR filter parameters
----------------------
-Designing a one-pass, zero-phase, non-causal bandpass filter:
-- Windowed time-domain design (firwin) method
-- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
-- Lower passband edge: 4.00
-- Lower transition bandwidth: 2.00 Hz (-6 dB cutoff frequency: 3.00 Hz)
-- Upper passband edge: 7.00 Hz
-- Upper transition bandwidth: 2.00 Hz (-6 dB cutoff frequency: 8.00 Hz)
-- Filter length: 413 samples (1.652 s)
-
-Not setting metadata
-288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
-  Filtering 6-10 Hz...
-Filtering raw data in 1 contiguous segment
-Setting up band-pass filter from 6 - 10 Hz
-
-FIR filter parameters
----------------------
-Designing a one-pass, zero-phase, non-causal bandpass filter:
-- Windowed time-domain design (firwin) method
-- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
-- Lower passband edge: 6.00
-- Lower transition bandwidth: 2.00 Hz (-6 dB cutoff frequency: 5.00 Hz)
-- Upper passband edge: 10.00 Hz
-- Upper transition bandwidth: 2.50 Hz (-6 dB cutoff frequency: 11.25 Hz)
-- Filter length: 413 samples (1.652 s)
-
-Not setting metadata
-288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 7-12 Hz...
-Filtering raw data in 1 contiguous segment
-Setting up band-pass filter from 7 - 12 Hz
-
-FIR filter parameters
----------------------
-Designing a one-pass, zero-phase, non-causal bandpass filter:
-- Windowed time-domain design (firwin) method
-- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
-- Lower passband edge: 7.00
-- Lower transition bandwidth: 2.00 Hz (-6 dB cutoff frequency: 6.00 Hz)
-- Upper passband edge: 12.00 Hz
-- Upper transition bandwidth: 3.00 Hz (-6 dB cutoff frequency: 13.50 Hz)
-- Filter length: 413 samples (1.652 s)
-
-Not setting metadata
-288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 10-15 Hz...
-Filtering raw data in 1 contiguous segment
-Setting up band-pass filter from 10 - 15 Hz
-
-FIR filter parameters
----------------------
-Designing a one-pass, zero-phase, non-causal bandpass filter:
-- Windowed time-domain design (firwin) method
-- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
-- Lower passband edge: 10.00
-- Lower transition bandwidth: 2.50 Hz (-6 dB cutoff frequency: 8.75 Hz)
-- Upper passband edge: 15.00 Hz
-- Upper transition bandwidth: 3.75 Hz (-6 dB cutoff frequency: 16.88 Hz)
-- Filter length: 331 samples (1.324 s)
-
-Not setting metadata
-288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
-  Filtering 12-19 Hz...
-Filtering raw data in 1 contiguous segment
-Setting up band-pass filter from 12 - 19 Hz
-
-FIR filter parameters
----------------------
-Designing a one-pass, zero-phase, non-causal bandpass filter:
-- Windowed time-domain design (firwin) method
-- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
-- Lower passband edge: 12.00
-- Lower transition bandwidth: 3.00 Hz (-6 dB cutoff frequency: 10.50 Hz)
-- Upper passband edge: 19.00 Hz
-- Upper transition bandwidth: 4.75 Hz (-6 dB cutoff frequency: 21.38 Hz)
-- Filter length: 275 samples (1.100 s)
+- Lower passband edge: 19.00
+- Lower transition bandwidth: 4.75 Hz (-6 dB cutoff frequency: 16.62 Hz)
+- Upper passband edge: 30.00 Hz
+- Upper transition bandwidth: 7.50 Hz (-6 dB cutoff frequency: 33.75 Hz)
+- Filter length: 175 samples (0.700 s)
 
 Not setting metadata
 </pre>
@@ -10327,76 +10397,6 @@ Not setting metadata
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>288 matching events found
 Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
-  Filtering 15-25 Hz...
-Filtering raw data in 1 contiguous segment
-Setting up band-pass filter from 15 - 25 Hz
-
-FIR filter parameters
----------------------
-Designing a one-pass, zero-phase, non-causal bandpass filter:
-- Windowed time-domain design (firwin) method
-- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
-- Lower passband edge: 15.00
-- Lower transition bandwidth: 3.75 Hz (-6 dB cutoff frequency: 13.12 Hz)
-- Upper passband edge: 25.00 Hz
-- Upper transition bandwidth: 6.25 Hz (-6 dB cutoff frequency: 28.12 Hz)
-- Filter length: 221 samples (0.884 s)
-
-Not setting metadata
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
-  Filtering 19-30 Hz...
-Filtering raw data in 1 contiguous segment
-Setting up band-pass filter from 19 - 30 Hz
-
-FIR filter parameters
----------------------
-Designing a one-pass, zero-phase, non-causal bandpass filter:
-- Windowed time-domain design (firwin) method
-- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
-- Lower passband edge: 19.00
-- Lower transition bandwidth: 4.75 Hz (-6 dB cutoff frequency: 16.62 Hz)
-- Upper passband edge: 30.00 Hz
-- Upper transition bandwidth: 7.50 Hz (-6 dB cutoff frequency: 33.75 Hz)
-- Filter length: 175 samples (0.700 s)
-
-Not setting metadata
-288 matching events found
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
@@ -10516,7 +10516,6 @@ Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
-0 bad epochs dropped
 </pre>
 </div>
 </div>
@@ -10530,7 +10529,8 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>  Filtering 2-5 Hz...
+<pre>0 bad epochs dropped
+  Filtering 2-5 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 2 - 5 Hz
 
@@ -10616,11 +10616,6 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 413 samples (1.652 s)
 
 Not setting metadata
-288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -10634,7 +10629,12 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
+<pre>288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
   Filtering 7-12 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 7 - 12 Hz
@@ -10650,12 +10650,6 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Upper transition bandwidth: 3.00 Hz (-6 dB cutoff frequency: 13.50 Hz)
 - Filter length: 413 samples (1.652 s)
 
-Not setting metadata
-288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
@@ -10669,7 +10663,13 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
+<pre>Not setting metadata
+288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
   Filtering 10-15 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 10 - 15 Hz
@@ -10721,25 +10721,25 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 275 samples (1.100 s)
 
 Not setting metadata
-288 matching events found
-Setting baseline interval to [-0.3, 0.0] s
-Applying baseline correction (mode: mean)
-0 projection items activated
-Using data from preloaded Raw for 288 events and 1076 original time points ...
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0 bad epochs dropped
+<pre>288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
+Applying baseline correction (mode: mean)
+0 projection items activated
+Using data from preloaded Raw for 288 events and 1076 original time points ...
+0 bad epochs dropped
   Filtering 15-25 Hz...
 Filtering raw data in 1 contiguous segment
 Setting up band-pass filter from 15 - 25 Hz
@@ -10756,21 +10756,21 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 221 samples (0.884 s)
 
 Not setting metadata
-288 matching events found
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Setting baseline interval to [-0.3, 0.0] s
+<pre>288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
@@ -10791,21 +10791,21 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 - Filter length: 175 samples (0.700 s)
 
 Not setting metadata
-288 matching events found
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.2s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Setting baseline interval to [-0.3, 0.0] s
+<pre>288 matching events found
+Setting baseline interval to [-0.3, 0.0] s
 Applying baseline correction (mode: mean)
 0 projection items activated
 Using data from preloaded Raw for 288 events and 1076 original time points ...
@@ -10866,7 +10866,7 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.3s
+<pre>[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.4s
 </pre>
 </div>
 </div>
@@ -11191,7 +11191,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">n_sample</span> <span class="o">=</span> <span class="mi">72</span>
@@ -11205,7 +11205,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#n_channel, n_time, n_sample = EEGR_train[0][0].shape</span>
@@ -11221,13 +11221,13 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>array([52, 11,  3, 28, 31, 27, 51, 40, 26, 15, 34, 13, 62, 54, 44, 65, 17,
-       61, 66,  5, 19, 55, 36,  1,  4, 29, 48, 57, 24, 49,  0, 67, 70, 64,
-        9, 25, 33, 14,  7, 50, 63, 45, 32,  2, 58, 21, 18, 56, 23, 53, 69,
-       59, 68, 71,  8, 39,  6, 10, 47, 16, 41, 35, 60, 43, 12, 42, 38, 20,
-       22, 46, 37, 30])</pre>
+<pre>array([44, 71, 65,  6, 27, 64, 33, 55,  4, 35,  9, 22, 20, 30,  3, 51, 69,
+       10,  1, 60,  2, 43, 46, 68, 39, 45, 63, 70, 32, 11, 19, 21,  8, 58,
+       40, 31, 29, 28, 62,  7,  0, 56, 57, 41, 25, 47,  5, 34, 54, 15, 52,
+       26, 49, 66, 16, 18, 38, 67, 42, 12, 37, 53, 36, 23, 50, 24, 59, 13,
+       61, 17, 14, 48])</pre>
 </div>
 </div>
 </div>
@@ -11237,7 +11237,7 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">6</span>
@@ -11265,12 +11265,12 @@ Using data from preloaded Raw for 288 events and 1076 original time points ...
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Our k is: 6
 Our bin size is: 12
-[[52 11  3 28 31 27 51 40 26 15 34 13]
- [62 54 44 65 17 61 66  5 19 55 36  1]
- [ 4 29 48 57 24 49  0 67 70 64  9 25]
- [33 14  7 50 63 45 32  2 58 21 18 56]
- [23 53 69 59 68 71  8 39  6 10 47 16]
- [41 35 60 43 12 42 38 20 22 46 37 30]]
+[[44 71 65  6 27 64 33 55  4 35  9 22]
+ [20 30  3 51 69 10  1 60  2 43 46 68]
+ [39 45 63 70 32 11 19 21  8 58 40 31]
+ [29 28 62  7  0 56 57 41 25 47  5 34]
+ [54 15 52 26 49 66 16 18 38 67 42 12]
+ [37 53 36 23 50 24 59 13 61 17 14 48]]
 </pre>
 </div>
 </div>
@@ -11281,7 +11281,7 @@ Our bin size is: 12
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">trainIdx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">k</span><span class="p">,</span> <span class="n">bin_size</span><span class="o">*</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
@@ -12335,12 +12335,23 @@ Processing Fold 6/6
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Test-Data">Test Data<a class="anchor-link" href="#Test-Data">¶</a></h3>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
@@ -12367,12 +12378,12 @@ Processing Fold 6/6
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">sessions</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
@@ -12381,110 +12392,12 @@ Processing Fold 6/6
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A01T.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A01T.mat'.
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>MNE_DATA is not already configured. It will be set to default location in the home directory - C:\Users\spart\mne_data
-All datasets will be downloaded to this location, if anything is already downloaded, please move manually to this location
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>100%|#####################################| 42.8M/42.8M [00:00&lt;00:00, 85.7GB/s]
-SHA256 hash of downloaded file: 054f02e70cf9c4ada1517e9b9864f45407939c1062c6793516585c6f511d0325
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A01E.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A01E.mat'.
-100%|#####################################| 43.8M/43.8M [00:00&lt;00:00, 87.3GB/s]
-SHA256 hash of downloaded file: 53d415f39c3d7b0c88b894d7b08d99bcdfe855ede63831d3691af1a45607fb62
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A02T.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A02T.mat'.
-100%|#####################################| 43.1M/43.1M [00:00&lt;00:00, 43.0GB/s]
-SHA256 hash of downloaded file: 5ddd5cb520b1692c3ba1363f48d98f58f0e46f3699ee50d749947950fc39db27
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A02E.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A02E.mat'.
-100%|#####################################| 44.2M/44.2M [00:00&lt;00:00, 89.9GB/s]
-SHA256 hash of downloaded file: d63c454005d3a9b41d8440629482e855afc823339bdd0b5721842a7ee9cc7b12
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A03T.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A03T.mat'.
-100%|#####################################| 44.1M/44.1M [00:00&lt;00:00, 44.0GB/s]
-SHA256 hash of downloaded file: 7e731ee8b681d5da6ecb11ae1d4e64b1653c7f15aad5d6b7620b25ce53141e80
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A03E.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A03E.mat'.
-100%|#####################################| 42.3M/42.3M [00:00&lt;00:00, 84.5GB/s]
-SHA256 hash of downloaded file: d4229267ec7624fa8bd3af5cbebac17f415f7c722de6cb676748f8cb3b717d97
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A04T.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A04T.mat'.
-100%|#####################################| 37.2M/37.2M [00:00&lt;00:00, 37.0GB/s]
-SHA256 hash of downloaded file: 15850d81b95fc88cc8b9589eb9b713d49fa071e28adaf32d675b3eaa30591d6e
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A04E.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A04E.mat'.
-100%|#####################################| 41.7M/41.7M [00:00&lt;00:00, 41.4GB/s]
-SHA256 hash of downloaded file: 81916dff2c12997974ba50ffc311da006ea66e525010d010765f0047e771c86a
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A05T.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A05T.mat'.
-100%|#####################################| 42.5M/42.5M [00:00&lt;00:00, 86.1GB/s]
-SHA256 hash of downloaded file: 77387d3b669f4ed9a7c1dac4dcba4c2c40c8910bae20fb961bb7cf5a94912950
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A05E.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A05E.mat'.
-100%|#####################################| 44.4M/44.4M [00:00&lt;00:00, 44.2GB/s]
-SHA256 hash of downloaded file: 8b357470865610c28b2f1d351beac247a56a856f02b2859d650736eb2ef77808
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A06T.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A06T.mat'.
-100%|#####################################| 44.6M/44.6M [00:00&lt;00:00, 93.8GB/s]
-SHA256 hash of downloaded file: 4dc3be1b0d60279134d1220323c73c68cf73799339a7fb224087a3c560a9a7e2
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A06E.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A06E.mat'.
-100%|#####################################| 43.4M/43.4M [00:00&lt;00:00, 86.8GB/s]
-SHA256 hash of downloaded file: bf67a40621b74b6af7a986c2f6edfff7fc2bbbca237aadd07b575893032998d1
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A07T.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A07T.mat'.
-100%|#####################################| 42.8M/42.8M [00:00&lt;00:00, 42.4GB/s]
-SHA256 hash of downloaded file: 43b6bbef0be78f0ac2b66cb2d9679091f1f5b7f0a5d4ebef73d2c7cc8e11aa96
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A07E.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A07E.mat'.
-100%|#####################################| 42.2M/42.2M [00:00&lt;00:00, 84.4GB/s]
-SHA256 hash of downloaded file: b9aaec73dcee002fab84ee98e938039a67bf6a3cbf4fc86d5d8df198cfe4c323
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A08T.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A08T.mat'.
-100%|#####################################| 45.0M/45.0M [00:00&lt;00:00, 88.4GB/s]
-SHA256 hash of downloaded file: 7a4b3bd602d5bc307d3f4527fca2cf076659e94aca584dd64f6286fd413a82f2
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A08E.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A08E.mat'.
-100%|#####################################| 46.3M/46.3M [00:00&lt;00:00, 92.5GB/s]
-SHA256 hash of downloaded file: 0eedbd89790c7d621c8eef68065ddecf80d437bbbcf60321d9253e2305f294f7
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A09T.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A09T.mat'.
-100%|#####################################| 44.8M/44.8M [00:00&lt;00:00, 44.7GB/s]
-SHA256 hash of downloaded file: b28d8a262c779c8cad9cc80ee6aa9c5691cfa6617c03befe490a090347ebd15c
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-Downloading data from 'http://bnci-horizon-2020.eu/database/data-sets/001-2014/A09E.mat' to file 'C:\Users\spart\mne_data\MNE-bnci-data\database\data-sets\001-2014\A09E.mat'.
-100%|#####################################| 44.8M/44.8M [00:00&lt;00:00, 89.6GB/s]
-SHA256 hash of downloaded file: 5d79649a42df9d51215def8ffbdaf1c3f76c54b88b9bbaae721e8c6fd972cc36
-Use this value as the 'known_hash' argument of 'pooch.retrieve' to ensure that the file hasn't changed if it is downloaded again in the future.
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">passbands</span> <span class="o">=</span> <span class="p">[</span>
@@ -12572,7 +12485,7 @@ Subject:  9
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">filtered_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">filtered_data</span><span class="p">)</span>
@@ -12587,7 +12500,7 @@ Subject:  9
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>(8, 11, 288, 22, 1076)</pre>
 </div>
@@ -12599,7 +12512,7 @@ Subject:  9
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">test_data_left</span> <span class="o">=</span> <span class="p">[]</span>
@@ -12651,7 +12564,7 @@ Subject:  9
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>((8, 11, 72, 22, 1076),
  (8, 11, 72, 22, 1076),
@@ -12666,7 +12579,7 @@ Subject:  9
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">test_data_OVR_left</span> <span class="o">=</span> <span class="p">[]</span>
@@ -12764,7 +12677,7 @@ Subject:  9
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">test_data_left</span><span class="o">.</span><span class="n">shape</span>
@@ -12778,7 +12691,7 @@ Subject:  9
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>(8, 11, 22, 1076, 72)</pre>
 </div>
@@ -12801,7 +12714,7 @@ Subject:  9
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># We'll reset trainIdx and valIdx (just in case)</span>
@@ -12842,6 +12755,7 @@ Subject:  9
 <span class="n">csp_per_class</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">trainIdx</span> <span class="o">=</span> <span class="n">trainIdx</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 <span class="n">valIdx</span> <span class="o">=</span> <span class="n">valIdx</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">lvr</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c1"># Begin nested loops</span>
 <span class="c1"># Subject &gt; Fold &gt; Band</span>
@@ -12890,6 +12804,7 @@ Subject:  9
     <span class="nb">print</span><span class="p">(</span><span class="s1">'==============='</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">accuracy</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">kappa</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">lvo</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">kappa</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
 
 <span class="c1"># Main Analysis Over</span>
 </pre></div>
@@ -12969,10 +12884,10 @@ Processing Fold 4/6
 Processing Fold 5/6
 Processing Fold 6/6
 ===============
-[0.90740741 0.68634259 0.86226852 0.50231481 0.59490741 0.81597222
- 0.77199074 0.96759259]
-[0.81481481 0.37268519 0.72453704 0.00462963 0.18981481 0.63194444
- 0.54398148 0.93518519]
+[0.91782407 0.65046296 0.91319444 0.64583333 0.62384259 0.84027778
+ 0.90046296 0.96412037]
+[0.83564815 0.30092593 0.82638889 0.29166667 0.24768519 0.68055556
+ 0.80092593 0.92824074]
 </pre>
 </div>
 </div>
@@ -12994,7 +12909,7 @@ Processing Fold 6/6
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># We'll reset trainIdx and valIdx (just in case)</span>
@@ -13083,6 +12998,7 @@ Processing Fold 6/6
     <span class="nb">print</span><span class="p">(</span><span class="s1">'==============='</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">accuracy</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">kappa</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">rvo</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">kappa</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
 
 <span class="c1"># Main Analysis Over</span>
 </pre></div>
@@ -13162,10 +13078,10 @@ Processing Fold 4/6
 Processing Fold 5/6
 Processing Fold 6/6
 ===============
-[0.82986111 0.7025463  0.96759259 0.70601852 0.71990741 0.89236111
- 0.87152778 0.63310185]
-[0.65972222 0.40509259 0.93518519 0.41203704 0.43981481 0.78472222
- 0.74305556 0.2662037 ]
+[0.82523148 0.65393519 0.94675926 0.71759259 0.66435185 0.94907407
+ 0.8900463  0.71412037]
+[0.65046296 0.30787037 0.89351852 0.43518519 0.3287037  0.89814815
+ 0.78009259 0.42824074]
 </pre>
 </div>
 </div>
@@ -13187,7 +13103,7 @@ Processing Fold 6/6
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># We'll reset trainIdx and valIdx (just in case)</span>
@@ -13276,6 +13192,7 @@ Processing Fold 6/6
     <span class="nb">print</span><span class="p">(</span><span class="s1">'==============='</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">accuracy</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">kappa</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">fvo</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">kappa</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
 
 <span class="c1"># Main Analysis Over</span>
 </pre></div>
@@ -13355,10 +13272,10 @@ Processing Fold 4/6
 Processing Fold 5/6
 Processing Fold 6/6
 ===============
-[0.90393519 0.86226852 0.81018519 0.59837963 0.61805556 0.9375
- 0.77893519 0.75694444]
-[0.80787037 0.72453704 0.62037037 0.19675926 0.23611111 0.875
- 0.55787037 0.51388889]
+[0.90740741 0.7037037  0.75       0.62152778 0.75       0.92476852
+ 0.6724537  0.75115741]
+[0.81481481 0.40740741 0.5        0.24305556 0.5        0.84953704
+ 0.34490741 0.50231481]
 </pre>
 </div>
 </div>
@@ -13380,7 +13297,7 @@ Processing Fold 6/6
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># We'll reset trainIdx and valIdx (just in case)</span>
@@ -13469,6 +13386,7 @@ Processing Fold 6/6
     <span class="nb">print</span><span class="p">(</span><span class="s1">'==============='</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">accuracy</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">kappa</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">tvo</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">kappa</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
 
 <span class="c1"># Main Analysis Over</span>
 </pre></div>
@@ -13548,10 +13466,10 @@ Processing Fold 4/6
 Processing Fold 5/6
 Processing Fold 6/6
 ===============
-[0.89699074 0.73726852 0.79513889 0.58449074 0.6712963  0.875
- 0.72106481 0.95023148]
-[0.79398148 0.47453704 0.59027778 0.16898148 0.34259259 0.75
- 0.44212963 0.90046296]
+[0.82060185 0.65162037 0.92476852 0.72453704 0.6099537  0.86226852
+ 0.6724537  0.95833333]
+[0.6412037  0.30324074 0.84953704 0.44907407 0.21990741 0.72453704
+ 0.34490741 0.91666667]
 </pre>
 </div>
 </div>
@@ -13562,21 +13480,21 @@ Processing Fold 6/6
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#kappa values</span>
-<span class="n">lvo</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.81481481</span><span class="p">,</span> <span class="mf">0.37268519</span><span class="p">,</span> <span class="mf">0.72453704</span><span class="p">,</span> <span class="mf">0.00462963</span><span class="p">,</span> <span class="mf">0.18981481</span><span class="p">,</span> <span class="mf">0.63194444</span><span class="p">,</span>
- <span class="mf">0.54398148</span><span class="p">,</span> <span class="mf">0.93518519</span><span class="p">]</span>
+<span class="n">lvo</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.83564815</span><span class="p">,</span> <span class="mf">0.30092593</span><span class="p">,</span> <span class="mf">0.82638889</span><span class="p">,</span> <span class="mf">0.29166667</span><span class="p">,</span> <span class="mf">0.24768519</span><span class="p">,</span> <span class="mf">0.68055556</span><span class="p">,</span>
+ <span class="mf">0.80092593</span><span class="p">,</span> <span class="mf">0.92824074</span><span class="p">]</span>
 
-<span class="n">rvo</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.65972222</span><span class="p">,</span> <span class="mf">0.40509259</span><span class="p">,</span> <span class="mf">0.93518519</span><span class="p">,</span> <span class="mf">0.41203704</span><span class="p">,</span> <span class="mf">0.43981481</span><span class="p">,</span> <span class="mf">0.78472222</span><span class="p">,</span>
- <span class="mf">0.74305556</span><span class="p">,</span> <span class="mf">0.2662037</span> <span class="p">]</span>
+<span class="n">rvo</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.65046296</span><span class="p">,</span> <span class="mf">0.30787037</span><span class="p">,</span> <span class="mf">0.89351852</span><span class="p">,</span> <span class="mf">0.43518519</span><span class="p">,</span> <span class="mf">0.3287037</span><span class="p">,</span> <span class="mf">0.89814815</span><span class="p">,</span>
+       <span class="mf">0.78009259</span><span class="p">,</span> <span class="mf">0.42824074</span><span class="p">]</span>
 
-<span class="n">fvo</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.80787037</span><span class="p">,</span> <span class="mf">0.72453704</span><span class="p">,</span> <span class="mf">0.62037037</span><span class="p">,</span> <span class="mf">0.19675926</span><span class="p">,</span> <span class="mf">0.23611111</span><span class="p">,</span> <span class="mf">0.875</span><span class="p">,</span>
- <span class="mf">0.55787037</span><span class="p">,</span> <span class="mf">0.51388889</span><span class="p">]</span>
+<span class="n">fvo</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.81481481</span><span class="p">,</span> <span class="mf">0.40740741</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span>        <span class="mf">0.24305556</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span>        <span class="mf">0.84953704</span><span class="p">,</span>
+ <span class="mf">0.34490741</span><span class="p">,</span> <span class="mf">0.50231481</span><span class="p">]</span>
 
-<span class="n">tvo</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.79398148</span><span class="p">,</span> <span class="mf">0.47453704</span><span class="p">,</span> <span class="mf">0.59027778</span><span class="p">,</span> <span class="mf">0.16898148</span><span class="p">,</span> <span class="mf">0.34259259</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span>
- <span class="mf">0.44212963</span><span class="p">,</span> <span class="mf">0.90046296</span><span class="p">]</span>
+<span class="n">tvo</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.6412037</span><span class="p">,</span>  <span class="mf">0.30324074</span><span class="p">,</span> <span class="mf">0.84953704</span><span class="p">,</span> <span class="mf">0.44907407</span><span class="p">,</span> <span class="mf">0.21990741</span><span class="p">,</span> <span class="mf">0.72453704</span><span class="p">,</span>
+ <span class="mf">0.34490741</span><span class="p">,</span> <span class="mf">0.91666667</span><span class="p">]</span>
 
 
 <span class="n">avgKappa</span> <span class="o">=</span> <span class="p">{}</span>
@@ -13598,16 +13516,16 @@ Processing Fold 6/6
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>{'Subject 1': 0.7690972199999999,
- 'Subject 2': 0.494212965,
- 'Subject 3': 0.7175925949999999,
- 'Subject 5': 0.1956018525,
- 'Subject 6': 0.30208333,
- 'Subject 7': 0.760416665,
- 'Subject 8': 0.57175926,
- 'Subject 9': 0.653935185}</pre>
+<pre>{'Subject 1': 0.7355324050000001,
+ 'Subject 2': 0.32986111250000005,
+ 'Subject 3': 0.7673611125,
+ 'Subject 5': 0.3547453725,
+ 'Subject 6': 0.324074075,
+ 'Subject 7': 0.7881944475,
+ 'Subject 8': 0.5677083350000001,
+ 'Subject 9': 0.69386574}</pre>
 </div>
 </div>
 </div>
@@ -13617,7 +13535,7 @@ Processing Fold 6/6
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -13633,7 +13551,7 @@ Processing Fold 6/6
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>0</pre>
 </div>
