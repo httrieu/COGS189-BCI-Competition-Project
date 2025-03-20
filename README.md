@@ -1,5 +1,12 @@
 COGS 189 - Team EEGineers
 
-**Important**
+Code References:
 
-Need to download the data from assignment 3 on datahub.
+Assignment 3  
+Created By: Alessandro "Ollie" D'Amico  
+This assignment was translated from MATLAB → Python/ipynb by:  
+
+- Teng "Simon" Fei
+- Eena Kosik  
+- Srinivas "Srini" Ravishankar  
+- Quirine "Q" van Engen  
